@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3bdcb0bff7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>E-Ramen Home</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-responsive">
+        <img class="logo" src="../src/img/logo.png" alt="logo eramen" />
+        <a href="#" class="icon" onclick="toggleFunc()">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+      </div>
+      <ul id="nav-menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="promotions.html">Promotion</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Start Content -->
+    <div class="content">
+      <div>
+        <h1 class="contact-title">CONTACT US</h1>
+      </div>
+
+      <div class="contact-content">
+        <img src="../src/img/contactleft.png" class="contact-img" alt="" />
+        <form class="contact-form" name="contactForm" onsubmit="validateForm()">
+          <div class="contact-divide">
+            <label class="contact-label" for="name">Name:</label><br />
+            <input
+              placeholder="Your Name"
+              type="text"
+              id="name"
+              name="name"
+            /><br />
+
+            <label class="contact-label" for="email">Email Address:</label
+            ><br />
+            <input
+              placeholder="youremail@email.com"
+              type="email"
+              id="email"
+              name="email"
+            /><br />
+            <label class="contact-label" for="phone">Phone Number:</label><br />
+            <input
+              placeholder="08123456789"
+              type="text"
+              id="phone"
+              name="phone"
+            /><br />
+          </div>
+          <div class="contact-divide radio">
+            <div class="radio">
+              <div>
+                <p class="contact-label contact-p">Gender:</p>
+                <div class="contact-gender">
+                  <div>
+                    <input type="radio" id="male" name="gender" value="male" />
+                    <label for="male">male</label><br />
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="female"
+                      name="gender"
+                      value="female"
+                    />
+                    <label for="female">female</label><br />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p class="contact-label contact-p">Preferences:</p>
+                <div class="contact-gender">
+                  <div>
+                    <input
+                      type="radio"
+                      id="ramen"
+                      name="preference"
+                      value="ramen"
+                    />
+                    <label for="ramen">ramen</label><br />
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="dryramen"
+                      name="preference"
+                      value="dryramen"
+                    />
+                    <label for="dryramen">dry ramen</label><br />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <input type="checkbox" id="newsletter" name="newsletter" />
+              <label class="contact-news" for="newsletter"
+                >agree to receive newsletter</label
+              ><br />
+            </div>
+            <button class="contact-submit" type="submit">Accept</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="media-social">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-facebook"></i>
+      </div>
+
+      <!-- Line -->
+      <div class="line"></div>
+
+      <div class="footer-content">
+        <p>2023 ERAMEN Company. All Rights Reserved.</p>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
